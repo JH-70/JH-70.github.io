@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BreakLine | Crypto Automation Platform</title>
+  <meta
+    name="description"
+    content="BreakLine is a crypto automation platform powered by the BreakCore trading engine: modular ML and RL trading logic, risk management, execution, monitoring, and a product-ready frontend."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#top">
+        <span class="brand-mark">B</span>
+        <span class="brand-copy">
+          <strong>BreakLine</strong>
+          <span>Powered by the BreakCore engine</span>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="#overview">Overview</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#included">Included</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Available for acquisition or licensing</p>
+          <h1>A serious crypto automation platform, not just a bot script.</h1>
+          <p class="hero-text">
+            BreakLine is the product layer for BreakCore, a modular trading engine built for live or paper
+            crypto trading with machine learning, reinforcement learning, technical strategies, risk controls,
+            execution logic, and monitoring already in place.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Request Details</a>
+            <a class="button button-secondary" href="#architecture">See How It Works</a>
+          </div>
+          <p class="hero-note">
+            Built as a technical trading system foundation for builders, operators, or teams that want to
+            accelerate a crypto automation product.
+          </p>
+        </div>
+
+        <aside class="hero-panel">
+          <div class="panel-grid">
+            <article class="metric-card">
+              <span class="metric-label">Trading Modes</span>
+              <strong>Live + Paper</strong>
+              <p>Same core runtime, different exchange credentials.</p>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">Decision Stack</span>
+              <strong>ML + RL + Rules</strong>
+              <p>Feature models, RL components, and strategy blending.</p>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">Operations</span>
+              <strong>Monitoring Ready</strong>
+              <p>Structured logging, health checks, Prometheus, Grafana.</p>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">Product Layer</span>
+              <strong>Frontend Included</strong>
+              <p>BreakLine product frontend with onboarding, desk, learn, trade, and assets flows.</p>
+            </article>
+          </div>
+        </aside>
+      </section>
+
+      <section class="proof-strip" id="overview">
+        <div class="proof-card">
+          <span>Built over time</span>
+          <strong>Long-form system, not a weekend prototype</strong>
+        </div>
+        <div class="proof-card">
+          <span>Exchange support</span>
+          <strong>Kraken-ready with live execution logic</strong>
+        </div>
+        <div class="proof-card">
+          <span>Design philosophy</span>
+          <strong>Fail safe, hold first, avoid bad trades</strong>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">What It Is</p>
+          <h2>BreakLine sits on top of a modular crypto trading engine.</h2>
+          <p>
+            The platform combines technical strategies, feature-driven models, optional reinforcement learning,
+            risk gating, execution safety, portfolio state tracking, and operations tooling. It is designed for
+            technical buyers who want a working base they can extend, refine, or commercialize.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Live and Paper Trading</h3>
+            <p>Run real or simulated trading workflows through the same core system with different API keys.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Strategy Layering</h3>
+            <p>Blend technical indicators, strategy weights, ML outputs, and optional RL logic in one stack.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Risk Controls</h3>
+            <p>Cooldowns, profitability thresholds, drawdown protection, and trade gating before execution.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Operational Visibility</h3>
+            <p>Health checks, metrics, logs, Docker deployment support, and monitoring configuration included.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section architecture" id="architecture">
+        <div class="section-heading">
+          <p class="eyebrow">Architecture</p>
+          <h2>How the system is structured</h2>
+          <p>
+            The core engine is intentionally modular. Each layer can be improved or replaced without rewriting
+            the entire platform.
+          </p>
+        </div>
+        <div class="flow">
+          <div class="flow-step">
+            <span>1</span>
+            <h3>Market Data</h3>
+            <p>Kraken market feeds, historical CSVs, optional caching, and fallback data handling.</p>
+          </div>
+          <div class="flow-step">
+            <span>2</span>
+            <h3>Features and Signals</h3>
+            <p>Indicators, engineered features, and strategy-specific signal generation.</p>
+          </div>
+          <div class="flow-step">
+            <span>3</span>
+            <h3>ML and Ensemble Logic</h3>
+            <p>Random forest, GBM, and optional RL components contribute action bias, not blind execution.</p>
+          </div>
+          <div class="flow-step">
+            <span>4</span>
+            <h3>Risk Management</h3>
+            <p>Hard gate for sizing, cadence, profitability thresholds, drawdown, and cooldown logic.</p>
+          </div>
+          <div class="flow-step">
+            <span>5</span>
+            <h3>Execution Engine</h3>
+            <p>Exchange order placement, rounding, trade confirmation, and safety-focused error handling.</p>
+          </div>
+          <div class="flow-step">
+            <span>6</span>
+            <h3>Portfolio and Telemetry</h3>
+            <p>Position state, trade tracking, metrics, logs, and monitoring visibility.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section included" id="included">
+        <div class="section-heading">
+          <p class="eyebrow">What Is Included</p>
+          <h2>A technical foundation with product, ops, and docs.</h2>
+        </div>
+        <div class="included-layout">
+          <article class="included-card">
+            <h3>Core Engine</h3>
+            <ul>
+              <li>Python trading runtime</li>
+              <li>Execution, risk, and portfolio modules</li>
+              <li>Strategy system and weighting config</li>
+              <li>Historical data and training flows</li>
+            </ul>
+          </article>
+          <article class="included-card">
+            <h3>Models and Research</h3>
+            <ul>
+              <li>Random forest and GBM components</li>
+              <li>PPO reinforcement learning artifacts</li>
+              <li>Offline training and inference separation</li>
+              <li>Datasets and backtesting support</li>
+            </ul>
+          </article>
+          <article class="included-card">
+            <h3>Product Layer</h3>
+            <ul>
+              <li>BreakLine iPhone app shell</li>
+              <li>Onboarding, desk, trade, learn, and assets flows</li>
+              <li>Subscription-oriented UX direction</li>
+              <li>Platform API wrapper for app-facing data</li>
+            </ul>
+          </article>
+          <article class="included-card">
+            <h3>Operations</h3>
+            <ul>
+              <li>Docker and docker-compose setup</li>
+              <li>Prometheus and Grafana configuration</li>
+              <li>Health checks and structured logging</li>
+              <li>Architecture and installation docs</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section audience">
+        <div class="section-heading">
+          <p class="eyebrow">Who This Fits</p>
+          <h2>Best suited for a buyer who wants leverage, not magic.</h2>
+        </div>
+        <div class="audience-grid">
+          <article class="audience-card">
+            <h3>Founders</h3>
+            <p>Use it as the base layer for a crypto automation product instead of starting from zero.</p>
+          </article>
+          <article class="audience-card">
+            <h3>Technical Traders</h3>
+            <p>Extend the existing system, retrain models, or connect it to your own execution workflows.</p>
+          </article>
+          <article class="audience-card">
+            <h3>Acquirers</h3>
+            <p>Buy a codebase with architecture, models, monitoring, and an iOS-facing wrapper already assembled.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2>Important context</h2>
+        </div>
+        <div class="faq-list">
+          <article class="faq-item">
+            <h3>Is this a guaranteed-profit product?</h3>
+            <p>No. It is a trading software platform with real strategy, execution, and monitoring components. It is not a promise of returns.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Is it plug-and-play for retail users?</h3>
+            <p>No. The current asset is best understood as a technical foundation for a product, business, or advanced operator.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Does it already support live execution?</h3>
+            <p>Yes. The documented engine supports Kraken-based live or paper trading depending on the API environment.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Can it be extended into a subscription product?</h3>
+            <p>Yes. The BreakLine app layer and platform wrapper were built to move in that direction, but production billing, compliance, and exchange-account onboarding are still product work.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section disclaimer">
+        <div class="disclaimer-card">
+          <p class="eyebrow">Risk Disclosure</p>
+          <h2>Use responsibly.</h2>
+          <p>
+            Cryptocurrency trading involves substantial risk. Nothing on this website constitutes financial,
+            investment, legal, or tax advice. Past results, paper trading, backtests, or model outputs do not
+            guarantee future performance.
+          </p>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow">Next Step</p>
+            <h2>Want the codebase, demo details, or acquisition info?</h2>
+            <p>
+              Replace the placeholder below with your preferred email or listing link before publishing.
+            </p>
+          </div>
+          <a class="button button-primary" href="mailto:you@example.com">you@example.com</a>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
