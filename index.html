@@ -1,0 +1,97 @@
+B BreakLine Powered by the BreakCore engine
+Overview Architecture Included FAQ Contact
+Available for acquisition or licensing
+A serious crypto automation platform, not just a bot script.
+BreakLine is the product layer for BreakCore, a modular trading engine built for live or paper crypto trading with machine learning, reinforcement learning, technical strategies, risk controls, execution logic, and monitoring already in place.
+Request Details See How It Works
+Built as a technical trading system foundation for builders, operators, or teams that want to accelerate a crypto automation product.
+Trading Modes Live + Paper
+Same core runtime, different exchange credentials.
+Decision Stack ML + RL + Rules
+Feature models, RL components, and strategy blending.
+Operations Monitoring Ready
+Structured logging, health checks, Prometheus, Grafana.
+Product Layer Frontend Included
+BreakLine product frontend with onboarding, desk, learn, trade, and assets flows.
+Built over time Long-form system, not a weekend prototype
+Exchange support Kraken-ready with live execution logic
+Design philosophy Fail safe, hold first, avoid bad trades
+What It Is
+BreakLine sits on top of a modular crypto trading engine.
+The platform combines technical strategies, feature-driven models, optional reinforcement learning, risk gating, execution safety, portfolio state tracking, and operations tooling. It is designed for technical buyers who want a working base they can extend, refine, or commercialize.
+Live and Paper Trading
+Run real or simulated trading workflows through the same core system with different API keys.
+Strategy Layering
+Blend technical indicators, strategy weights, ML outputs, and optional RL logic in one stack.
+Risk Controls
+Cooldowns, profitability thresholds, drawdown protection, and trade gating before execution.
+Operational Visibility
+Health checks, metrics, logs, Docker deployment support, and monitoring configuration included.
+Architecture
+How the system is structured
+The core engine is intentionally modular. Each layer can be improved or replaced without rewriting the entire platform.
+1
+Market Data
+Kraken market feeds, historical CSVs, optional caching, and fallback data handling.
+2
+Features and Signals
+Indicators, engineered features, and strategy-specific signal generation.
+3
+ML and Ensemble Logic
+Random forest, GBM, and optional RL components contribute action bias, not blind execution.
+4
+Risk Management
+Hard gate for sizing, cadence, profitability thresholds, drawdown, and cooldown logic.
+5
+Execution Engine
+Exchange order placement, rounding, trade confirmation, and safety-focused error handling.
+6
+Portfolio and Telemetry
+Position state, trade tracking, metrics, logs, and monitoring visibility.
+What Is Included
+A technical foundation with product, ops, and docs.
+Core Engine
+	•	Python trading runtime
+	•	Execution, risk, and portfolio modules
+	•	Strategy system and weighting config
+	•	Historical data and training flows
+Models and Research
+	•	Random forest and GBM components
+	•	PPO reinforcement learning artifacts
+	•	Offline training and inference separation
+	•	Datasets and backtesting support
+Product Layer
+	•	BreakLine iPhone app shell
+	•	Onboarding, desk, trade, learn, and assets flows
+	•	Subscription-oriented UX direction
+	•	Platform API wrapper for app-facing data
+Operations
+	•	Docker and docker-compose setup
+	•	Prometheus and Grafana configuration
+	•	Health checks and structured logging
+	•	Architecture and installation docs
+Who This Fits
+Best suited for a buyer who wants leverage, not magic.
+Founders
+Use it as the base layer for a crypto automation product instead of starting from zero.
+Technical Traders
+Extend the existing system, retrain models, or connect it to your own execution workflows.
+Acquirers
+Buy a codebase with architecture, models, monitoring, and an iOS-facing wrapper already assembled.
+FAQ
+Important context
+Is this a guaranteed-profit product?
+No. It is a trading software platform with real strategy, execution, and monitoring components. It is not a promise of returns.
+Is it plug-and-play for retail users?
+No. The current asset is best understood as a technical foundation for a product, business, or advanced operator.
+Does it already support live execution?
+Yes. The documented engine supports Kraken-based live or paper trading depending on the API environment.
+Can it be extended into a subscription product?
+Yes. The BreakLine app layer and platform wrapper were built to move in that direction, but production billing, compliance, and exchange-account onboarding are still product work.
+Risk Disclosure
+Use responsibly.
+Cryptocurrency trading involves substantial risk. Nothing on this website constitutes financial, investment, legal, or tax advice. Past results, paper trading, backtests, or model outputs do not guarantee future performance.
+Next Step
+Want the codebase, demo details, or acquisition info?
+Replace the placeholder below with your preferred email or listing link before publishing.
+you@example.com
